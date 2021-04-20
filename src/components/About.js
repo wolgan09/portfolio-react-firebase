@@ -11,7 +11,7 @@ export default function About(props) {
           <div className="flex-auto ">
             <img className="profile-pic p-3" src={profilepic} alt="Author" />
           </div>
-          <div className="flex-auto">
+          <div className="flex-auto text-white">
             <h1 className="text-7xl text-center ">About Me</h1>
             <hr></hr>
             <h1 className="text-5xl line-1 anim-typewriter text-center"> I am a Front end developer</h1>       

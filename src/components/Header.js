@@ -12,7 +12,7 @@ export default function Header(props) {
           <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
             <div className="flex justify-start lg:w-0 lg:flex-1"> </div>
             <nav className="md:flex space-x-10 lg:flex-1">
-              <div className="text-center items-list">
+              <div className="text-center items-list text-white">
               <span type="button" className="cursor-pointer mr-10  inline-flex items-center text-base font-medium   " aria-expanded="false">
                   <span>About</span>
                 </span>
