@@ -1,6 +1,23 @@
 .profile-pic{
-    height: 35vh;
-    width: 30vw;
-    border-radius: 40%;
+    height: 50vh;
+    width: 25vw;
+    border-radius: 50%;
     float: left;
+}
+#about{
+    background-color:gray;
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-image{
+    background-image: url(../assets/images/landing-bg.jpg);
+    /* filter: blur(3px); */
+}
+hr{
+    border: .1rem solid #61dbfb;
+    background-color: #61dbfb;
+    margin: 2rem auto;
+    width: 45vw;
 }

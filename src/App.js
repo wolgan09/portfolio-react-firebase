@@ -1,4 +1,5 @@
 import './App.css';
+import './index.css';
 import React, { useEffect, useState } from 'react';
 import Header from './components/Header';
 import About from './components/About';
@@ -6,7 +7,8 @@ import Footer from './components/Footer';
 import $ from "jquery";
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
-import { makeStyles } from '@material-ui/core';
+
+
 
 function App() {
   const [state, setstate] = useState();
@@ -27,24 +29,20 @@ function App() {
   useEffect(() => {
     getResumeData();
   },[])
- 
-  const useStyles = makeStyles((theme) => ({
-    main:{
-      backgroundColor:"black",
-      color:"white"
-    }
-  }));
-  const classes = useStyles();
+ const classes = {}
+
  
   return (
-    <div>
+    <div className="">
       { state ?  
       <div className={classes.main}>
         <Header data={state.resumeData.main} />
+        <main>
         <About data={state.resumeData.main} />
         <Portfolio data={state.resumeData.portfolio} />
         <Contact data={state.resumeData.main} />
         <Footer data={state.resumeData.main} />
+        </main>
       </div> : null }
     </div > 
   );

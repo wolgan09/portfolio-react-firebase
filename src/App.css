@@ -1,14 +1,17 @@
 .line-1{
-  position: relative;
-  top: 50%;  
+  position: relative;  
   width: 24em;
   margin: 0 auto;
   border-right: 2px solid rgba(255,255,255,.75);
-  font-size: 180%;
+  /* font-size: 180%; */
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%);    
+}
+
+header{
+  min-height: 7.5vh;
 }
 
 /* Animation */
