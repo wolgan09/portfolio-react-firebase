@@ -13,14 +13,14 @@ export default function Contact(props) {
     const email = props.data.email;
     const resumeDownload = props.data.resumedownload;
     return (
-        <section id="contact">
-            <h1 className="text-7xl">Contact</h1>
+        <section id="contact" className="min-h-screen">
+            <h1 className="text-5xl">Contact</h1>
             <div className="flex">
-                <div className="flex-1"></div>
-                <div className="flex-1">
-                    <div className="">
+                <div className="flex-1 md:hidden "></div>
+                <div className="flex-1 md:flex md:flex-col ">
+                    <div className="md:text-center md:justify-center">
                         <div className="contact-details">
-                            <h2>Contact Details</h2>
+                            <h2 className="md:text-center md:w-full">Contact Details</h2>
                             <p className="">
                                 <span>{name}</span>
                                 <p>{bio}</p>

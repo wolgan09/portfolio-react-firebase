@@ -1,36 +1,61 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './Header.css';
+import $ from 'jquery'
+import author from '../assets/images/author.jpg'
 
 
 export default function Header(props) {
 
+    
+    useEffect(() => {
+      $(".nav-toggler").each(function (_, navToggler) {
+        var target = $(navToggler).data("target");
+        $(navToggler).on("click", function () {
+          $(target).animate({
+            height: "toggle",
+          });
+        });
+      });
+    },[])
+  
+
   return (
-    <div className="">
-    <div className="flex fixed bg-transparent">
-      <div className="fixed w-full flex-1 ">
-        <div className="max-w-7xl">
-          <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
-            <div className="flex justify-start lg:w-0 lg:flex-1"> </div>
-            <nav className="md:flex space-x-10 lg:flex-1">
-              <div className="text-center items-list text-white">
-              <span type="button" className="cursor-pointer mr-10  inline-flex items-center text-base font-medium   " aria-expanded="false">
-                  <span>About</span>
-                </span>
-                <span type="button" className=" cursor-pointer mr-10  inline-flex items-center text-base font-medium   " aria-expanded="false">
-                  <span>Contact</span>
-                </span>
-                <span type="button" className="cursor-pointer mr-10  inline-flex items-center text-base font-medium   " aria-expanded="false">
-                  <span>Skills</span>
-                </span>
-                <span type="button" className="cursor-pointer inline-flex items-center text-base font-medium " aria-expanded="false">
-                  <span>Projects</span>
-                </span>
-              </div>
-            </nav>
+    <div>
+
+      <div className="bg-yellow-300 w-full lg:fixed p-2"  >
+        <nav className="flex items-center p-3 flex-wrap ">
+          <button
+            className="text-white inline-flex p-3  lg:hidden ml-auto hover:text-white outline-none nav-toggler"
+            data-target="#navigation" >
+            <i className="material-icons">menu</i>
+          </button>
+          <div
+            className=" top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto"
+            id="navigation">
+            <div
+              className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col text-center lg:h-auto" >
+              
+              <a href="#about"
+                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-600 items-center justify-center hover:text-gray-900 font-bold">
+                <span>About</span>
+              </a>
+              <a href="#skills"
+                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-600 items-center justify-center hover:text-gray-900 font-bold">
+                <span>Skills</span>
+              </a>
+              <a href="#contact"
+                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-600 items-center justify-center hover:text-gray-900 font-bold">
+                <span>Contact</span>
+              </a>
+              <a href="#projects"
+                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-600 items-center justify-center hover:text-gray-900 font-bold">
+                <span>Projects</span>
+              </a>
+
+            </div>
           </div>
-        </div>
-      </div>      
-    </div>
+        </nav>
+      </div>
     </div>
   );
 }

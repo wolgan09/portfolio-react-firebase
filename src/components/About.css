@@ -1,4 +1,4 @@
-.profile-pic{
+/* .profile-pic{
     height: 50vh;
     width: 25vw;
     border-radius: 50%;
@@ -9,15 +9,16 @@
     min-height: 80vh;
     background-size: cover;
     background-position: center;
-}
+} */
 
 .bg-image{
-    background-image: url(../assets/images/landing-bg.jpg);
+    /* background-image: url(../assets/images/landing-bg.jpg); */
     /* filter: blur(3px); */
 }
+
 hr{
     border: .1rem solid #61dbfb;
     background-color: #61dbfb;
     margin: 2rem auto;
-    width: 45vw;
+    width: 20vw;
 }
