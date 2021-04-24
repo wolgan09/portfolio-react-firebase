@@ -3,9 +3,9 @@ import React from "react";
 export default function Footer() {
   return (
     <footer className="relative pt-10 pb-6  bg-gray-400">
-      {/* <div
+      <div
         className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-        style={{ height: "80px" }}
+        style={{ height: "100px" }}
       >
         <svg
           className="absolute bottom-0 overflow-hidden"
@@ -21,7 +21,7 @@ export default function Footer() {
             points="2560 0 2560 100 0 100"
           ></polygon>
         </svg>
-      </div> */}
+      </div>
     </footer>
   );
 }

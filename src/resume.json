@@ -78,11 +78,11 @@
     "skills":[
       {
         "name":"Python",
-        "level":"60%"
+        "level":"20%"
       },
       {
         "name":"VueJs",
-        "level":"55%"
+        "level":"35%"
       },
       {
         "name":"ReactJs",
@@ -90,18 +90,18 @@
       },
       {
         "name":"CSS",
-        "level":"90%"
-      },
-      {
-        "name":"PHP",
         "level":"80%"
       },
       {
-        "name":"Swift",
+        "name":"Angular",
+        "level":"80%"
+      },
+      {
+        "name":"Javascript",
         "level":"50%"
       },
       {
-        "name":"JAVA",
+        "name":"Jquery",
         "level":"80%"
       }
     ]

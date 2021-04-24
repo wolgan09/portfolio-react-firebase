@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import $ from "jquery";
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
+import Skills from './components/Skills';
 
 
 
@@ -39,7 +40,10 @@ function App() {
         <Header data={state.resumeData.main} />
         <main>
         <About data={state.resumeData.main} />
+        <hr className="shadow"></hr>
         <Portfolio data={state.resumeData.portfolio} />
+        <Skills data={state.resumeData.resume} />
+        <hr className="shadow"></hr>
         <Contact data={state.resumeData.main} />
         <Footer data={state.resumeData.main} />
         </main>

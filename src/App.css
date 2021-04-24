@@ -1,0 +1,17 @@
+
+.skills{
+    margin-top: 36px;
+    list-style: none;
+}
+#skills .skills {    
+    position: relative; 
+    margin-bottom: 60px;
+    background: rgb(170, 170, 170);
+     height: auto; 
+     width: 50%;
+     border-radius: 0px;
+}
+
+.skills li{
+padding: 2%;
+}
