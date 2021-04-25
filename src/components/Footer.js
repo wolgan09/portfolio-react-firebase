@@ -8,7 +8,7 @@ export default function Footer() {
         style={{ height: "100px" }}
       >
         <svg
-          className="absolute bottom-0 overflow-hidden"
+          className="absolute bottom-0 overflow-hidden lg:block hidden"
           xmlns="http://www.w3.org/2000/svg"
           preserveAspectRatio="none"
           version="1.1"
@@ -17,8 +17,8 @@ export default function Footer() {
           y="0"
         >
           <polygon
-            className="text-gray-300 fill-current"
-            points="2560 0 2560 100 0 100"
+            className="text-white fill-current lg:block hidden"
+            points="2560 0 2560 100 0 80"
           ></polygon>
         </svg>
       </div>

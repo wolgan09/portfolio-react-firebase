@@ -22,8 +22,8 @@ export default function Skills(props) {
           //   <span style={{ width, backgroundColor }} className={className}></span>
           //   <em>{skills.name}</em>
           // </li>
-          <div className="relative pt-1">
-            <div className="overflow-hidden h-10 mb-4 text-xs flex rounded bg-gray-200 ">
+          <div className="relative pt-8">
+            <div className="overflow-hidden lg:h-20 h-10 mb-4 text-xs flex rounded bg-gray-200 ">
               <div style={{width:width}} className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-gray-500">
                 <span className="text-lg lg:text-xl">{skills.name}</span>
               </div>
@@ -33,10 +33,13 @@ export default function Skills(props) {
       });
 
     return (
-        <section id="skills" className="flex">
+        <section id="skills" className="min-h-screen">
+          <div className="pt-20">
+            <h2 className="text-5xl text-center font-bold mt-10 pb-5">Skills</h2>
             <div className="bars w-1/2 mx-auto">
               {skills}
             </div>        
+            </div>
         </section>
     )
 }

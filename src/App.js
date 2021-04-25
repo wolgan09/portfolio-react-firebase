@@ -42,6 +42,7 @@ function App() {
         <About data={state.resumeData.main} />
         <hr className="shadow"></hr>
         <Portfolio data={state.resumeData.portfolio} />
+        <hr className="shadow"></hr>
         <Skills data={state.resumeData.resume} />
         <hr className="shadow"></hr>
         <Contact data={state.resumeData.main} />
