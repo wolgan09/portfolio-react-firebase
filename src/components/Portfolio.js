@@ -7,7 +7,7 @@ export default function Portfolio() {
             <section id="projects" className="min-h-screen">
                 <div className="p-20 ">
             <h2 className="text-5xl text-center font-bold">Projects</h2>
-                <div className="flex mx:auto md:flex-wrap">
+                <div className="flex mx:auto md:flex-wrap mt-20">
                     {cards.map(() => {
                         const elem = <div className="w-1/2"> <div className="lg:flex-grow pr-5 mb-20 card-items"><Cards /> </div > <div className="flex-auto pr-5 card-items"><Cards /></div> </div>                       
                         return elem; 

@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import profilepic from '../assets/images/author.jpg'
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHub from '@material-ui/icons/GitHub';
+import LocationOnIcon from '@material-ui/icons/LocationOn'
 import './About.css';
 
 export default function About(props) {
 
+  useEffect(() => {
+
+  },[])
+
+    
   return (
     <>
       <section id="about" className="lg:pt-24 min-h-screen bg-gray-600">
@@ -23,9 +29,11 @@ export default function About(props) {
           </h2>
             <hr></hr>
             <p className="md:text-2xl lg:text-4xl text-gray-400 text-center"> I am a Web developer</p>
+            
+            <p className="md:text-2xl lg:text-2xl text-gray-500 text-center pt-5"><LocationOnIcon /> Pune, India </p>
             <div className="text-white mt-10">
-            <span className="pr-5"> <GitHub  fontSize="large"  /></span>
-            <span > <LinkedInIcon style={{ fontSize: 40 }} /></span>
+            <a className="cursor-pointer" href={props.data.social[0].url}> <LinkedInIcon style={{ fontSize: 40 }} /></a>
+            <a className="cursor-pointer pr-5" href={props.data.social[1].url} > <GitHub  fontSize="large" /></a>
             </div>
           </div>
         </div>
